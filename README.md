@@ -299,7 +299,7 @@ $$
 - **STUDENT**($student\_id$, $student\_name$, $group\_id$, $year$)
 - **COURSE**($course\_id$, $title$, $dept$)
 - **CLASS**($class\_id$, $group\_id$, $course\_id$, $instructor$, $semester$)
-- **ENROLL**($student\_id$, $class\_id$, $grade$)
+- **ENROLL**($student\_id$, $course\_id$, $grade$)
 - **PREREQ**($course\_id$, $prereq\_course\_id$)
 - **CLUB**($club\_name$, $student\_id$)
 
