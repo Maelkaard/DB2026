@@ -181,7 +181,7 @@ ALTER TABLE name DROP CONSTRAINT constraint_name;
 ```sql
 ALTER TABLE cinema.movies
 ADD COLUMN country VARCHAR(100),
-ADD CONSTRAINT movies_pk PRIMARY KEY (movie_id), --действия с одной таблицей можно выполнить одним оператором ALTER
+ADD CONSTRAINT movies_pk PRIMARY KEY (movie_id); --действия с одной таблицей можно выполнить одним оператором ALTER
 ```
 
 При попытке добавить таблице ограничение, которому не удовлетворяет хотя бы одна строка таблицы, запрос завершится с ошибкой.
