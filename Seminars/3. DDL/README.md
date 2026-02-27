@@ -170,7 +170,7 @@ ALTER TABLE name ALTER COLUMN column_name DROP NOT NULL;
 ```
 - Добавить ограничение
 ```sql
-ALTER TABLE name ADD CONSTRAINT constraint_expression;
+ALTER TABLE name ADD constraint_expression;
 ```
 - Удалить ограничение
 ```sql
