@@ -96,6 +96,8 @@ CREATE TABLE cinema.users (
     full_name      VARCHAR(150) NOT NULL,
     birth_date     DATE,
     country        VARCHAR(100)
+	country        VARCHAR(100),
+    CONSTRAINT unique_date_name UNIQUE(full_name, birth_date) --ограничение бессмысленное, потом удалим
 );
 ```
 При попытке вставки в таблицу строки, нарушающей ограничения, или изменения строки таблицы так, что она будет нарушать ограничения - запрос завершится с ошибкой.
@@ -177,11 +179,14 @@ ALTER TABLE name ADD constraint_expression;
 ALTER TABLE name DROP CONSTRAINT constraint_name;
 ```
 
-Изменим ранее созданную таблицу 'movies':
+Изменим ранее созданные таблицы:
 ```sql
 ALTER TABLE cinema.movies
 ADD COLUMN country VARCHAR(100),
 ADD CONSTRAINT movies_pk PRIMARY KEY (movie_id); --действия с одной таблицей можно выполнить одним оператором ALTER
+
+ALTER TABLE cinema.users
+DROP CONSTRAINT unique_date_name; --мы знаем имя этого ограничения, т.к. создали его именованным. иначе пришлось бы искать в информационной схеме
 ```
 
 При попытке добавить таблице ограничение, которому не удовлетворяет хотя бы одна строка таблицы, запрос завершится с ошибкой.
