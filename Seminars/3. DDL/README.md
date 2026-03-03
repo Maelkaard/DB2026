@@ -374,8 +374,11 @@ ORDER BY u.full_name, m.title;
 Пересоздадим схему cinema при помощи скрипта 3_0.sql (для сброса значений serial)
 
 Напомним структуру таблиц
+
 users(user_id, email, full_name, birth_date, country)  
+
 movies(movie_id, title, release_year, duration_min, rating, country)  
+
 watch(user_id, movie_id)
 
 ---
