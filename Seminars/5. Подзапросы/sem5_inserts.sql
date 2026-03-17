@@ -85,7 +85,22 @@ INSERT INTO sem5.customers VALUES
 (12,'Emily Stone','London','2023-09-12'),
 (13,'Pavel Kuznetsov','Moscow','2023-10-01'),
 (14,'Olga Smirnova','Kazan','2023-10-05'),
-(15,'Victor Ivanov','Novosibirsk','2023-11-11');
+(15,'Victor Ivanov','Novosibirsk','2023-11-11'),
+(16,'Alex Brown','Berlin','2023-11-15'),
+(17,'Sophie Meyer','Berlin','2023-11-16'),
+(18,'Lukas Schmidt','Munich','2023-11-17'),
+(19,'Daniel Fischer','Munich','2023-11-18'),
+(20,'Eva Wagner','Hamburg','2023-11-19'),
+(21,'Paul Becker','Hamburg','2023-11-20'),
+(22,'Anna Schulz','Vienna','2023-11-21'),
+(23,'Martin Hofer','Vienna','2023-11-22'),
+(24,'Jan Novak','Prague','2023-11-23'),
+(25,'Petra Svobodova','Prague','2023-11-24'),
+(26,'Karel Dvorak','Prague','2023-11-25'),
+(27,'Marek Kowalski','Warsaw','2023-11-26'),
+(28,'Anna Nowak','Warsaw','2023-11-27'),
+(29,'Piotr Zielinski','Warsaw','2023-11-28'),
+(30,'Tomasz Lewandowski','Warsaw','2023-11-29');
 
 INSERT INTO sem5.products VALUES
 (1,'Laptop','Electronics',1200,15),
@@ -105,7 +120,29 @@ INSERT INTO sem5.products VALUES
 (15,'Paper pack','Stationery',7,400),
 (16,'Office chair','Furniture',220,30),
 (17,'Gaming laptop','Electronics',1800,5),
-(18,'Desk lamp','Furniture',35,75);
+(18,'Desk lamp','Furniture',35,75),
+(19,'USB Cable','Electronics',8,200),
+(20,'External HDD','Electronics',120,40),
+(21,'Webcam','Electronics',95,35),
+(22,'Microphone','Electronics',150,20),
+(23,'Router','Electronics',130,18),
+(24,'Switch','Electronics',110,15),
+(25,'HDMI Cable','Electronics',12,300),
+(26,'Ethernet Cable','Electronics',5,500),
+(27,'Standing Desk','Furniture',450,10),
+(28,'Drawer Cabinet','Furniture',320,12),
+(29,'Wall Shelf','Furniture',90,50),
+(30,'Whiteboard','Furniture',140,25),
+(31,'Notebook A4','Stationery',3,800),
+(32,'Notebook A5','Stationery',2,900),
+(33,'Highlighter','Stationery',1.5,1000),
+(34,'Stapler','Stationery',9,200),
+(35,'Tape','Stationery',4,400),
+(36,'Paper Clips','Stationery',1,2000),
+(37,'Desk Organizer','Stationery',15,150),
+(38,'Planner','Stationery',12,300),
+(39,'Gaming Mouse','Electronics',70,40),
+(40,'Mechanical Keyboard','Electronics',140,20);
 
 INSERT INTO sem5.orders VALUES
 (1,1,1,'2024-01-15','completed'),
@@ -127,7 +164,12 @@ INSERT INTO sem5.orders VALUES
 (17,15,10,'2024-03-16','completed'),
 (18,1,7,'2024-03-17','completed'),
 (19,3,1,'2024-03-18','completed'),
-(20,5,2,'2024-03-19','cancelled');
+(20,5,2,'2024-03-19','cancelled'),
+(21,16,7,'2024-03-20','completed'),
+(22,17,7,'2024-03-21','completed'),
+(23,18,8,'2024-03-22','completed'),
+(24,19,9,'2024-03-23','new'),
+(25,20,2,'2024-03-24','completed');
 
 INSERT INTO sem5.order_items VALUES
 (1,1,1,1150),
@@ -162,4 +204,14 @@ INSERT INTO sem5.order_items VALUES
 (18,7,2,70),
 (19,16,1,210),
 (19,11,3,42),
-(20,6,10,5);
+(20,6,10,5),
+(21,2,3,22),
+(21,7,1,80),
+(22,9,1,890),
+(23,10,1,240),
+(23,13,15,1.9),
+(24,11,2,45),
+(25,1,1,1200),
+(25,5,1,400),
+(22,39,1,65),
+(23,21,1,90);
