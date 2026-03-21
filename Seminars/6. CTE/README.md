@@ -146,11 +146,11 @@ FROM new_people;
 ```sql
 WITH big_spenders AS (
     SELECT person_id
-    FROM orders
+    FROM sem6.orders
     GROUP BY person_id
     HAVING SUM(amount) > 300
 )
-UPDATE people
+UPDATE sem6.people
 SET last_name = last_name || ' (VIP)'
 WHERE person_id IN (
     SELECT person_id
