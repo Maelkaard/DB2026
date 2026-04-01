@@ -323,7 +323,7 @@ WITH RECURSIVE v AS (
 SELECT * FROM v;
 ```
 
-можно исользовать краткий синтаксис
+можно использовать краткий синтаксис
 
 ```sql
 CREATE RECURSIVE VIEW v AS
