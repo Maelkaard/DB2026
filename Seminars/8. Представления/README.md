@@ -393,7 +393,7 @@ sem8.book
 - book_id - уникальный идентификатор книги (PRIMARY KEY)
 - title - название книги
 - author_name - автор
-- enre_name - жанр
+- genre_name - жанр
 - publish_year - год издания
 
 sem8.book_copy
