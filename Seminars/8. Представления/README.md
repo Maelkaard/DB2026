@@ -44,7 +44,7 @@ CREATE TABLE sem8.enrollment (
     grade         INTEGER CHECK (grade BETWEEN 2 AND 5)
 );
 
-INSERT INTO sem8.student (student_id, full_name, group_name, enrollment_year) VALUES
+INSERT INTO sem8.students (student_id, full_name, group_name, enrollment_year) VALUES
 (1, 'Иван Петров', 'T01-301', 2023),
 (2, 'Мария Соколова', 'T01-301', 2023),
 (3, 'Алексей Смирнов', 'T01-302', 2023),
