@@ -316,7 +316,7 @@ ALTER VIEW view_name RESET ( view_option_name [, ... ] )
 Если представление должно хранить только полные данные из рекурсивного CTE, то вместо
 
 ```sql
-CREATE VIEW v AS
+CREATE VIEW v1 AS
 WITH RECURSIVE v AS (
     SELECT ...
 )
@@ -326,7 +326,7 @@ SELECT * FROM v;
 можно использовать краткий синтаксис
 
 ```sql
-CREATE RECURSIVE VIEW v AS
+CREATE RECURSIVE VIEW v1 AS
 SELECT ...
 ```
 
