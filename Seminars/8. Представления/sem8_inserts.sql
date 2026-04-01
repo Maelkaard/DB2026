@@ -5,7 +5,6 @@ CREATE SCHEMA sem8;
 CREATE TABLE sem8.reader (
     reader_id        INTEGER PRIMARY KEY,
     full_name        TEXT NOT NULL,
-    category_name    TEXT NOT NULL,
     registration_dt  DATE NOT NULL
 );
 
