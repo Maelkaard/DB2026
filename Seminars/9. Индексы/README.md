@@ -306,7 +306,7 @@ CREATE INDEX idx_order_customer_id_order_dt ON sem9.order(customer_id, order_dt)
 Частичный индекс - индекс, построенный только для тех строк таблицы, которые удовлетворяют условию. Для объявления частичного индекса используется выражение WHERE при создании индекса:
 
 ```sql
-CREATE INDEX idx_processing_orders ON sem9.orders(customer_id)
+CREATE INDEX idx_processing_orders ON sem9.order(customer_id)
 WHERE status = 'processing'
 ```
 
