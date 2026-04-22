@@ -237,7 +237,7 @@ $$;
 
 ```sql
 CREATE OR REPLACE FUNCTION sem10.get_product_price(
-    product_id INTEGER
+    p_product_id INTEGER
 )
 RETURNS NUMERIC
 LANGUAGE sql
@@ -245,7 +245,7 @@ STABLE
 AS $$
     SELECT p.price
     FROM sem10.product p
-    WHERE p.product_id = product_id;
+    WHERE p.product_id = p_product_id;
 $$;
 ```
 
