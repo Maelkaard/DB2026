@@ -39,7 +39,9 @@ $$;
 Пример:
 
 ```sql
-CREATE FUNCTION demo.sum_three_numbers(
+CREATE SCHEMA sem10;
+
+CREATE FUNCTION sem10.sum_three_numbers(
     a INTEGER,
     b INTEGER,
     c INTEGER DEFAULT 0
