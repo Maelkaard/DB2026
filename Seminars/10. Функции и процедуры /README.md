@@ -186,10 +186,10 @@ END;
 
 ```sql
 CREATE OR REPLACE FUNCTION sem10.get_customer_orders(
-    customer_id INTEGER
+    p_customer_id INTEGER
 )
 RETURNS TABLE (
-    order_id INTEGER,
+    order_id BIGINT,
     order_dt DATE,
     status TEXT
 )
@@ -199,7 +199,7 @@ BEGIN
     RETURN QUERY
     SELECT o.order_id, o.order_dt, o.status
     FROM sem10.order o
-    WHERE o.customer_id = customer_id
+    WHERE o.customer_id = p_customer_id
     ORDER BY o.order_dt DESC;
 END;
 $$;
