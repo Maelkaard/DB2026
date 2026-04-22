@@ -198,7 +198,7 @@ AS $$
 BEGIN
     RETURN QUERY
     SELECT o.order_id, o.order_dt, o.status
-    FROM sem10.customer_order o
+    FROM sem10.order o
     WHERE o.customer_id = customer_id
     ORDER BY o.order_dt DESC;
 END;
