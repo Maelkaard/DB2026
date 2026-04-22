@@ -357,15 +357,15 @@ $$;
 
 ```sql
 CREATE OR REPLACE PROCEDURE sem10.change_order_status(
-    order_id INTEGER,
+    p_order_id INTEGER,
     new_status TEXT
 )
 LANGUAGE plpgsql
 AS $$
 BEGIN
-    UPDATE sem10.customer_order
+    UPDATE sem10.order
     SET status = new_status
-    WHERE order_id = order_id;
+    WHERE order_id = p_order_id;
 END;
 $$;
 ```
