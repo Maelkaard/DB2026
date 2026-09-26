@@ -1,6 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS shop;
 
-DROP TABLE IF EXISTS shop.orders;
+DROP TABLE IF EXISTS shop.orders CASCADE;
 
 CREATE TABLE shop.orders (
     order_id      INTEGER,
