@@ -95,7 +95,6 @@ CREATE TABLE cinema.users (
     email          VARCHAR(255) UNIQUE,
     full_name      VARCHAR(150) NOT NULL,
     birth_date     DATE,
-    country        VARCHAR(100)
 	country        VARCHAR(100),
     CONSTRAINT unique_date_name UNIQUE(full_name, birth_date) --ограничение бессмысленное, потом удалим
 );
